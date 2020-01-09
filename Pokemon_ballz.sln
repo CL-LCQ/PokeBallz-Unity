@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{EE667D93-79F2-05E5-F3B9-BFA54FD4D30B}") = "Pokemon_ballz", "Assembly-CSharp-firstpass.csproj", "{EA0A91C5-889C-7FBA-7B86-075C4D8F6FA1}"
+EndProject
+Project("{EE667D93-79F2-05E5-F3B9-BFA54FD4D30B}") = "Pokemon_ballz", "Assembly-CSharp.csproj", "{7FC6BF9F-3B7E-C53E-8145-F6E1F3794EBD}"
+EndProject
+Project("{EE667D93-79F2-05E5-F3B9-BFA54FD4D30B}") = "Pokemon_ballz", "Assembly-CSharp-Editor.csproj", "{734AE44A-D027-0E51-419A-730095C9F69F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA0A91C5-889C-7FBA-7B86-075C4D8F6FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0A91C5-889C-7FBA-7B86-075C4D8F6FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0A91C5-889C-7FBA-7B86-075C4D8F6FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0A91C5-889C-7FBA-7B86-075C4D8F6FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC6BF9F-3B7E-C53E-8145-F6E1F3794EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC6BF9F-3B7E-C53E-8145-F6E1F3794EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC6BF9F-3B7E-C53E-8145-F6E1F3794EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC6BF9F-3B7E-C53E-8145-F6E1F3794EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734AE44A-D027-0E51-419A-730095C9F69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734AE44A-D027-0E51-419A-730095C9F69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734AE44A-D027-0E51-419A-730095C9F69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734AE44A-D027-0E51-419A-730095C9F69F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

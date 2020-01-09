@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{EA0A91C5-889C-7FBA-7B86-075C4D8F6FA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_6;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_TEXTUREID_MAP;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;HAS_NEON_SKINNIG;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;ads;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Antialiasing.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Bloom.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BloomAndFlares.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BloomOptimized.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\BlurOptimized.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\CameraMotionBlur.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionCurves.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLookup.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionLut2D.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ColorCorrectionRamp.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ContrastEnhance.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ContrastStretch.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\CreaseShading.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\DepthOfField.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\DepthOfFieldDeprecated.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\EdgeDetection.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Fisheye.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\GlobalFog.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Grayscale.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\MotionBlur.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndGrain.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\NoiseAndScratches.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenOverlay.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientObscurance.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\ScreenSpaceAmbientOcclusion.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\SepiaTone.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\TiltShift.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
+     <Compile Include="Assets\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+     <None Include="Assets\Marmoset\Shader\VertexColor\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
+     <None Include="Assets\Marmoset\Shader\Beta\Skin\Marmoset Skin Detail IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Marmoset\Documentation\Scripting.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\social\an_social.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-games.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\Marmoset\_ChangeLog.txt" />
+     <None Include="Assets\Plugins\StansAssets\Versions\MSP_VersionInfo.txt" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Cutout\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\Marmoset\Shader\Probe\MarmosetConvolve.cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-ads-lite.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Occlusion\Marmoset Bumped Specular IBL Fast.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Beta\Skin\Marmoset Skin IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Occlusion\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Illumin\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Marmoset Diffuse IBL (1).shader" />
+     <None Include="Assets\Plugins\Android\AN_Res\res\xml\file_paths.xml" />
+     <None Include="Assets\Marmoset\Shader\VertexColor\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Plugins\Android\AN_Res\AndroidManifest.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Marmoset\Shader\Occlusion\Marmoset Bumped Diffuse Occ IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-gcm.txt" />
+     <None Include="Assets\Marmoset\Shader\Beta\Skin\MarmosetSkin.cginc" />
+     <None Include="Assets\Extensions\MobileNativePopUps\Documentation\ReadMe.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-basement.jar.txt" />
+     <None Include="Assets\Marmoset\Shader\Matte\Marmoset Matte Warped.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\AN_Res\res\values\analytics.xml" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Transparent\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\_Readme.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Transparent\Simple Glass\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\Extensions\AndroidNative\Documentation\ReadMe.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Mobile Terrain Specular.shader" />
+     <None Include="Assets\Marmoset\Shader\Beta\Skin\MarmosetSkinInput.cginc" />
+     <None Include="Assets\Marmoset\Shader\MarmosetDirect (1).cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-auth.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\SpeedTree\MarmosetSpeedTree.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\billing\an_billing.jar.txt" />
+     <None Include="Assets\SimpleLUT\_HereVR Color Grading Demo\Readme - HVR Color Grading Demo.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\social\an_social.jar.txt" />
+     <None Include="Assets\Plugins\StansAssets\IOS\GMA_SA_Lib_Proxy.mm.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Occlusion\Marmoset Specular IBL Fast.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\MarmosetGrass.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\Extensions\IOSNative\Documentation\ISN_VersionNotes.txt" />
+     <None Include="Assets\Plugins\StansAssets\IOS\GMA_SA_Lib.m.txt" />
+     <None Include="Assets\Marmoset\Shader\Probe\Marmoset Projection Box.shader" />
+     <None Include="Assets\Marmoset\Shader\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Occlusion\Marmoset Diffuse Occ IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Transparent\Simple Glass\Marmoset Specular Glow IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Terrain Distant.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-plus.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\libs\android-support-v4.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Terrain Specular.shader" />
+     <None Include="Assets\Marmoset\Documentation\Mipmapped Gloss.txt" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Simple Glass\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Documentation\Custom Diffuse Files.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-iid.jar.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Marmoset\Documentation\Sky Object.txt" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Guidelines.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Transparent\Simple Glass\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-base.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Simple Add Pass.shader" />
+     <None Include="Assets\Marmoset\Documentation\Terrain.txt" />
+     <None Include="Assets\Marmoset\Shader\Beta\Layered\Marmoset 4-Layer IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\androidnative.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlur.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_iAd.mm.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Cutout\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetCore.cginc" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_NSData+Base64.h.txt" />
+     <None Include="Assets\Marmoset\Documentation\Lightmapping.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeLeavesInput.cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\libs\image-chooser-library-1.6.0.txt" />
+     <None Include="Assets\Marmoset\Shader\VertexOcclusion\Marmoset Bumped Specular Vertex Occ IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\VertexOcclusion\Marmoset Bumped Diffuse Vertex Occ IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Beta\Layered\Marmoset 2-Layer IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\SpeedTree\SpeedTree.shader" />
+     <None Include="Assets\Plugins\Android\AN_Res\res\values\analytics.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Marmoset\Shader\Occlusion\Marmoset Specular Occ IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetCore (1).cginc" />
+     <None Include="Assets\Marmoset\External\Lightmapping Extended\Presets\Built-in\Low Quality.xml" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetDirect.cginc" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Marmoset\Shader\VertexColor\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Transparent\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Simple First Pass.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\an_googleplay.jar.txt" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Cutout\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-gcm.jar.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-analytics.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\VertexOcclusion\Marmoset Bumped Diffuse Vertex Occ IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\GMA_SA_Lib.h.txt" />
+     <None Include="Assets\Marmoset\Shader\Matte\MarmosetMatte.cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-appinvite.jar.txt" />
+     <None Include="Assets\Extensions\AndroidManifestManager\default.xml" />
+     <None Include="Assets\Plugins\StansAssets\Android\libs\support-v4-23.4.0.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-auth.jar.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\SoftOcclusion\SH_Vertex.cginc" />
+     <None Include="Assets\Extensions\AndroidNative\Documentation\AN_VersionNotes.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeBark.cginc" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Terrain Diffuse.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Illumin\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_NativeCore.mm.txt" />
+     <None Include="Assets\Marmoset\Documentation\Beta.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\androidnative.jar.txt" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCreatorBarkRendertex.shader" />
+     <None Include="Assets\Extensions\GoogleAnalytics\Documentation\ReadMe.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCreatorLeavesFast.shader" />
+     <None Include="Assets\Marmoset\Documentation\HDR.txt" />
+     <None Include="Assets\Extensions\AmazonNative\Documentation\READ ME.txt" />
+     <None Include="Assets\Marmoset\Shader\VertexLit\Marmoset Vertex Lit IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Occlusion\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-plus.jar.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\VertexOcclusion\Marmoset Bumped Specular Vertex Occ IBL.shader" />
+     <None Include="Assets\Extensions\GoogleMobileAd\Documentation\ReadMe.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection2DLut.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_Camera.mm.txt" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetSurf.cginc" />
+     <None Include="Assets\Marmoset\Shader\Beta\Layered\Marmoset 2-Layer Vertex IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\AndroidManifest.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-ads.txt" />
+     <None Include="Assets\SimpleLUT\Shader\SimpleLUT.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Transparent\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCreatorLeavesRendertex.shader" />
+     <None Include="Assets\Marmoset\Shader\Probe\Marmoset RGBM Blit.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\MarmosetTerrain.cginc" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_InApp.mm.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\SoftOcclusion\TreeSoftOcclusionBark.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\SpeedTree\SpeedTreeBillboard.shader" />
+     <None Include="Assets\Marmoset\Shader\Illumin\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-auth-base.jar.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-iid.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Details\WavingGrass.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeLeaves.cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\mobile-native-popups.txt" />
+     <None Include="Assets\Plugins\StansAssets\Versions\ISN_VersionInfo.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\an_googleplay.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\app_licensing\an_licensing_library.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CreaseApply.shader" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\VertexOcclusion\Marmoset Specular Vertex Occ IBL.shader" />
+     <None Include="Assets\Marmoset\Documentation\Skyshop.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Simple Distant.shader" />
+     <None Include="Assets\Marmoset\Shader\VertexColor\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_SocialGate.mm.txt" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_CloudKit.mm.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\AN_Res\AndroidManifest.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\SoftOcclusion\TreeSoftOcclusionLeavesRendertex.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_NativeCore.h.txt" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLit.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-base.jar.txt" />
+     <None Include="Assets\Marmoset\Shader\Illumin\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-analytics.jar.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeVertexLit.cginc" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Details\VertexLit.shader" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Simple Glass\Marmoset Bumped Specular Glow IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_Soomla.mm.txt" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Simple Glass\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetInput.cginc" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCreatorLeavesOptimized.shader" />
+     <None Include="Assets\Extensions\IOSDeploy\Documentation\ReadMe.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Marmoset\_Version.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCreatorLeaves.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeBarkInput.cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\social\twitter4j-core-4.0.4.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\VertexOcclusion\Marmoset Diffuse Vertex Occ IBL.shader" />
+     <None Include="Assets\Marmoset\Documentation\Material.txt" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Illumin\Marmoset Bumped Specular IBL Fast.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Details\WavingGrassBillboard.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlur.shader" />
+     <None Include="Assets\Marmoset\Shader\VertexLit\Marmoset Vertex Lit Specular Occ IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_ReplayKit.mm.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Terrain Add Pass.shader" />
+     <None Include="Assets\Marmoset\Shader\VertexLit\Marmoset Vertex Lit Specular IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\VertexColor\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Beta\Skin\Marmoset Skin Fast IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Illumin\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\libs\an_sa_soomla.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-games.jar.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Transparent\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-analytics-impl.txt" />
+     <None Include="Assets\Marmoset\Shader\Probe\Marmoset RGBM Cube.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\VertexOcclusion\Marmoset Specular Vertex Occ IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Extensions\GoogleMobileAd\Documentation\GMA_VersionNotes.txt" />
+     <None Include="Assets\Marmoset\Shader\Beta\Skin\Marmoset Hair IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Probe\Marmoset RGBM Convolve.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_NSData+Base64.m.txt" />
+     <None Include="Assets\Extensions\IOSNative\Documentation\ReadMe.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\VertexColor\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Marmoset\Shader\Sky\Marmoset Skydome IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_Media.mm.txt" />
+     <None Include="Assets\Marmoset\Shader\Occlusion\Marmoset Bumped Specular Occ IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\Marmoset\Shader\VertexLit\Marmoset Vertex Lit Specular Vertex Occ IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Beta\Layered\Marmoset 4-Layer Vertex IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Versions\AN_VersionInfo.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Illumin\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Simple Glass\Marmoset Specular Glow IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Mobile Terrain Diffuse.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\SoftOcclusion\TreeSoftOcclusionLeaves.shader" />
+     <None Include="Assets\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
+     <None Include="Assets\Marmoset\Shader\Matte\Marmoset Matte.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Extensions\UltimateMobile\Documentation\UM_VersionNotes.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-auth-base.txt" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCreatorBarkOptimized.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Illumin\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCore.cginc" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Marmoset Bumped Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\SoftOcclusion\TreeSoftOcclusionBarkRendertex.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Marmoset\Documentation\Vegetation.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\VertexColor\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\Marmoset Mobile Terrain Distant.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_GameCenter.mm.txt" />
+     <None Include="Assets\Plugins\Android\AN_Res\res\values\version.xml" />
+     <None Include="Assets\Marmoset\Shader\Beta\Skin\Marmoset Skin Cutout IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCreatorLeavesFastOptimized.shader" />
+     <None Include="Assets\Plugins\StansAssets\Versions\GMA_VersionInfo.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\AN_Res\res\values\version.xml" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Marmoset\Shader\Sky\Marmoset Skybox IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Transparent\Cutout\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetVertex.cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-analytics-impl.jar.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Marmoset\Shader\Illumin\Marmoset Diffuse IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_GestureRecognizer.mm.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\Marmoset\External\Lightmapping Extended\Presets\Built-in\High Quality.xml" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-basement.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\AN_Res\res\xml\file_paths.xml" />
+     <None Include="Assets\Marmoset\Shader\Beta\Marmoset Refractive IBL.shader" />
+     <None Include="Assets\Plugins\StansAssets\Android\AN_Res\res\values\ids.xml" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Marmoset Specular IBL Fast.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetMobile.cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-drive.txt" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+     <None Include="Assets\Marmoset\Shader\VertexOcclusion\Marmoset Diffuse Vertex Occ IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\Terrain\MarmosetSimpleTerrain.cginc" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-drive.jar.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-ads.jar.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-ads-lite.jar.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\mobile-native-popups.jar.txt" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Plugins\StansAssets\Versions\UM_VersionInfo.txt" />
+     <None Include="Assets\Extensions\UltimateMobile\Documentation\ReadMe.txt" />
+     <None Include="Assets\Plugins\StansAssets\IOS\ISN_FilePicker.mm.txt" />
+     <None Include="Assets\Marmoset\Documentation\Shaders.txt" />
+     <None Include="Assets\Plugins\StansAssets\Android\google_play\play-services-appinvite.txt" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Occlusion\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Occlusion\Marmoset Bumped Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetSurf (1).cginc" />
+     <None Include="Assets\Marmoset\Shader\Terrain\TreeCreator\TreeCreatorBark.shader" />
+     <None Include="Assets\Marmoset\Shader\Mobile\VertexColor\Marmoset Specular IBL.shader" />
+     <None Include="Assets\Marmoset\Shader\MarmosetUber.cginc" />
+     <None Include="Assets\Marmoset\Shader\Mobile\Marmoset Bumped Specular IBL Fast.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
+     <None Include="Assets\Plugins\Android\AN_Res\res\values\ids.xml" />
+     <None Include="Assets\Plugins\StansAssets\Android\billing\an_billing.txt" />
+     <None Include="Assets\Marmoset\Shader\Matte\Marmoset Matte Fast.shader" />
+     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="GoogleAdsWP8">
+ <HintPath>/Volumes/Mac extra/POKEMON_BALLZ/Pokemon_ballz/Assets/Plugins/GoogleAdsWP8.dll</HintPath>
+ </Reference>
+ <Reference Include="WP8Native">
+ <HintPath>/Volumes/Mac extra/POKEMON_BALLZ/Pokemon_ballz/Assets/Plugins/WP8Native.dll</HintPath>
+ </Reference>
+ <Reference Include="WP8PopUps">
+ <HintPath>/Volumes/Mac extra/POKEMON_BALLZ/Pokemon_ballz/Assets/Plugins/WP8PopUps.dll</HintPath>
+ </Reference>
+ <Reference Include="WSANative">
+ <HintPath>/Volumes/Mac extra/POKEMON_BALLZ/Pokemon_ballz/Assets/Plugins/WSANative.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
